@@ -138,4 +138,16 @@ jQuery(function($){
           Inputmask({"mask": "+7 (999) 999-99-99"}).mask(this);
       }
   })
+  $('.basic_select').select2();
+
 })
+
+let bg = document.querySelectorAll('.hero_parallax');
+for (let i = 0; i < bg.length; i++){
+    window.addEventListener('mousemove', function(e) { 
+        let x = e.clientX / window.innerWidth;
+        let y = e.clientY / window.innerHeight;     
+        bg[i].style.transform = 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)';
+    });    
+}
+

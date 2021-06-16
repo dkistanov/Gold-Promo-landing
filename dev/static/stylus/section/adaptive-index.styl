@@ -66,14 +66,14 @@ section.hero:before {
     display: none;
 }
 
-.hero .container:before {
+.hero .container .banner__fade {
     width: 500px;
     height: 500px;
     right: -47px;
     background-size: cover;
 }
 
-.hero .container:after {
+.hero .container .banner__man{
     width: 300px;
     height: 300px;
     right: 30px;
@@ -568,18 +568,44 @@ a.footer__link {
     .hero .container {
     padding-top: 328px;
 }
-
-.hero .container:before {
-    right: 50%;
-    transform: translateX(50%);
+.hero__audit-analization .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 10px;
 }
 
-.hero .container:after {
+.hero__audit-analization .select2-container .select2-selection--single {
+    padding: 0 5px;
+}
+
+.hero .container .banner__fade {
+    right: 50%;
+    transform: translateX(50%) !important;
+}
+
+.hero .container .banner__man {
     top: 96px;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%) !important;
+}
+.select2-container.select2-container--default.select2-container--open {
 }
 
+span.select2-container.select2-container--default.select2-container--open {
+    position: static;
+}
+
+.select2-container--open .select2-dropdown--below {
+    transform: translateX(-79px);
+    width: 150px !important;
+}
+
+html .select2-results__option {
+    padding: 7px;
+    font-size: 12px;
+}
+
+html .select2-container--default .select2-results>.select2-results__options {
+    max-height: 150px;
+}
 h1.hero__title.title_sect {
     font-size: 20px;
     text-align: center;
