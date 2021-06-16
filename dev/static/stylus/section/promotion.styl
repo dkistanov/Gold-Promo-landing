@@ -1,0 +1,255 @@
+
+section.promotion {
+  padding-top: 110px;
+}
+
+.promotion__title {
+  margin: 0 0 18px;
+  text-align: center;
+}
+
+span.text_yellow {
+  color: #ffbf05;
+}
+
+.promotion__desc {
+  font-size: 1.125rem;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.2;
+  margin-bottom: 34px;
+}
+
+.promotion__select {
+  display: flex;
+}
+
+.promotion__select-item {
+  width 20%
+  text-align: center;
+}
+
+.select-item__text {
+  display: block;
+  padding-bottom: 17px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #c6c6c6;
+  font-size: 1.125rem;
+  font-weight: bold;
+  position relative
+  transition: .3s all
+  cursor pointer
+}
+.select-item__subtext {
+    opacity: 0;
+    font-size: 18px
+    transition: .3s opacity;
+}
+
+.promotion__select-item.active .select-item__text {
+    color: #ffbf05;
+
+}
+
+.promotion__select-item.active .select-item__subtext {
+    opacity: 1;
+}
+
+.promotion__select {
+    padding-bottom: 70px;
+}
+
+.select-item__text:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    transition: .3s all;
+    background-color: #ffbf05;
+    height: 3px;
+    bottom: -2px;
+}
+
+.promotion__select-item.active .select-item__text:after {
+    width: 100%;
+}
+
+.promotion__item-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.promition__item-example {
+    margin-bottom: 23px;
+    display: block;
+    color: #0060ff;
+    font-size: 18px;
+    text-decoration: underline;
+    display: none;
+}
+
+.promotion__item-desc {
+    margin-top: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion__item-subtitle {
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+}
+
+.promotion__item-stages {
+    max-width: 655px;
+}
+
+.promotion__item-stage {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.promotion__item {
+    min-height: 320px;
+    flex-direction: column;
+}
+
+.promotion__period {
+    margin-top: auto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 15px
+}
+
+.promotion__item:first-child .promotion__item-subtitle {
+    display: block;
+}
+
+.promotion__item:first-child .promition__item-example {
+    display: block;
+}
+.promotion__item:first-child .promotion__period {
+    display: none
+}
+
+
+
+section.services {
+    padding-top: 130px;
+}
+
+.promotion__item:after {content: "";position: absolute;right: 0;background-size: cover;background-repeat: no-repeat;}
+
+.promotion__item {
+    position: relative;
+}
+
+.promotion__item:nth-child(5):after {
+    background-image: url(../img/content/fifth.png);
+    width: 547px;
+    height: 375px;
+    top: -40px;
+    z-index: -1;
+    right: -17px;
+}
+
+.promotion__item:nth-child(4):after {
+    background-image: url(../img/content/fourth.png);
+    width: 430px;
+    height: 291px;
+    top: 20px;
+    z-index: -1;
+    right: 49px;
+}
+
+
+
+.promotion__item:nth-child(3):after {
+    background-image: url(../img/content/third.png);
+    width: 500px;
+    height: 365px;
+    top: -49px;
+    z-index: -1;
+    right: -30px;
+}
+
+.promotion__item:nth-child(2):after {
+    background-image: url(../img/content/second.png);
+    width: 516px;
+    height: 346px;
+    top: 66px;
+    z-index: -1;
+    right: -40px;
+}
+.promition__item-example {
+    cursor pointer    
+}
+
+.promotion__item:nth-child(1):after {
+    background-image: url(../img/content/first.png);
+    width: 364px;
+    height: 332px;
+    top: 49px;
+    z-index: -1;
+    right: 9px;
+}
+
+form.promotion__form {
+    padding: 26px 30px;
+    background: #fff;
+    border: 4px solid #ffbf05;
+    width: 384px;
+    position: absolute;
+}
+
+form.promotion__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.promotion__form-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.promotion__form-subtitle {
+    max-width: 230px;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-bottom: 36px;
+}
+
+.promotion__form .form__field {
+    margin-bottom: 28px;
+}
+
+.promotion__form .form__field::placeholder {
+    color: #000;
+}
+
+.promo_note {font-size: 12px; transition:.3s all;text-transform: uppercase;text-align: center;margin-top: -6px;margin-bottom: 29px;color: transparent;}
+
+.form__nore {
+    font-size: 11px;
+    text-align: center;
+}
+
+.promotion__form .btn.form__button {
+    margin-bottom: 16px;
+}
+
+form.promotion__form {
+    width: 376px;
+}
+
+

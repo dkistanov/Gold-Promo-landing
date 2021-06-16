@@ -1,0 +1,270 @@
+section.hero {
+    background: #110c2a;
+    position: relative;
+}
+
+.hero__title.title_sect {
+    font-weight: bold;
+    margin: 0 0 28px;
+    color: #fff;
+}
+
+.title_sect {
+    font-size: 44px;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.hero__desc {
+    margin: 0 0 48px;
+    font-size: 24px;
+    color: #fff;
+    max-width: 600px;
+}
+
+.hero__wehelp.text_note {
+    font-size: 14px;
+    max-width: 430px;
+    color: #FFF;
+    line-height: 1.3;
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+.hero__head {
+    display: flex;
+    flex-direction: column;
+}
+
+section.hero:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    clip-path: polygon(0px 135px, 100% 0%, 100% 100%, 0% 100%);
+    background: #fff;
+    height: 135px;
+}
+section.hero {
+    overflow: hidden;
+}
+.hero .container {
+    z-index: 5;
+    position: relative;
+    padding-top: 295px;
+}
+
+.hero .container:before {content: "";width: 800px;height: 800px;right: -69px;top: 43px;background: url(../img/content/fade.png) no-repeat;position: absolute;z-index: -1;}
+
+.hero .container:after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    right: 62px;
+    top: 110px;
+    background: url(../img/content/hero.png) no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__audit {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero__audit-title {
+    max-width: 340px;
+    color: #ffbf05;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 29px;
+    line-height: 1.2;
+}
+
+.hero__audit-analization {
+    flex-grow: 1;
+    margin-right: 23px;
+}
+
+.btn {
+    padding: 14px 45px 13px;
+    border: 2px solid #fff;
+    background: #ffbf05;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero__audit-field-wrp {
+    background: #fff;
+    height: 45px;
+}
+
+.hero__head {
+    padding-bottom: 35px;
+}
+
+.hero__audit-field {
+    height: 100%;
+    flex-grow: 1;
+    padding: 17px 30px;
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.hero__audit-field-wrp {
+    display: flex;
+    align-items: center;
+}
+
+.hero__audit-field-select {
+    width: 107px;
+    height: calc(100% - 3px);
+    background: url(../img/content/select.png) no-repeat;
+    margin-right: 2px;
+    background-size: cover;
+}
+
+.hero__audit-field::placeholder {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    font-family: 'Montserrat';
+}
+
+
+
+.hero__audit-bottom {
+    padding: 12px 83px 0 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__audit-prompt {
+    color: #fff;
+}
+
+.hero__audit-whatis {
+    color: #9b9b9b;
+    cursor pointer
+}
+
+.hero__bottom {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.hero__our-clients {
+    max-width: 175px;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 50px;
+    line-height: 1.2;
+    flex-shrink: 0
+}
+
+.hero__our-clients-list {
+    display: flex;
+    flex-grow: 1
+    max-width: 975px
+}
+
+.hero__our-clients-item {
+    height: 126px;
+    background: #fff;
+    border: 1px solid #cccccc;
+    margin-right: 17px;
+    position: relative
+}
+
+.hero__our-clients-item img {
+    max-width: 80%;
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+}
+
+.hero__our-clients-slider {
+    margin: 0 15px;
+    width: 100%
+}
+
+.hero__our-clients-slider {
+    margin: 0 0 0 15px;
+}
+
+.slider__arrow {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: url(../img/content/arrow.jpg) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.hero__our-clients-list {
+    align-items: center;
+}
+
+.slider__arrow.arrow_prev {
+    transform: scale(-1);
+}
+
+.hero__our-clients-list .slider__arrow.arrow_prev {
+    display: none !important;
+}
+.hero__our-clients-item:hover {
+    transform: scale(1.1);
+}
+
+.hero__our-clients-item {
+    transition: .3s all;
+}
+
+.hero__our-clients-slider .slick-list {padding: 15px 0 18px;}
+
+.hero__bottom {
+    padding-top: 25px;
+}
+
+
+.hero__audit-analization {
+    position: relative;
+}
+
+.hero__audit-popup {
+    position: absolute;
+    left: 0;
+    top: 85px;
+    padding: 29px 27px;
+    background: #fff;
+    z-index: 2;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 1.2;
+    display: none;
+}
+.hero__audit-popup {
+    text-align: justify;
+}
+
+
+.hero__our-clients-slider .slick-list {
+    padding: 15px 0 18px 15px;
+}
+
+.hero__our-clients-slider {
+    margin: 0 15px 0 0;
+}
+
+
+
+
+
